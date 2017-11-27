@@ -1,0 +1,7 @@
+[switches]
+c3850-1 ansible_host=192.168.12.3 ansible_network_os=ios
+c3560-1 ansible_host=192.168.12.2 ansible_network_os=ios
+j2300-1 ansible_host=192.168.12.4 ansible_network_os=junos
+
+[network:children]
+switches

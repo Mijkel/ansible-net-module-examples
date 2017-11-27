@@ -1,0 +1,26 @@
+---
+#
+# Simple playbook to configure the banner on network devices.  The banner is
+# defined in the appropriate place in the inventory (i.e. in host vars for
+# things spcific to a host, group_vars for things specific to a group of hosts,
+# and all to things tha apply to all hosts).  NXOS is handled differently
+# because its concept of motd differed from other network OSs.
+#
+- hosts: all
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: configure the login banner
+      net_banner:
+        banner: "{{ 'motd' if ansible_network_os == 'nxos' else 'login' }}"
+        text: "{{ network_banner }}"
+        state: present
+      when: network_banner is defined
+
+    - name: configure the MOTD
+      net_banner:
+        banner: motd
+        text: "{{ network_motd }}"
+        state: present
+      when: network_motd is defined and ansible_network_os != 'nxos'

@@ -1,0 +1,9 @@
+---
+site_domain_name: example.com
+site_nameservers:
+  - 8.8.8.8
+  - 8.8.4.4
+
+site_domain_search:
+  - foo.example.com
+  - example.com

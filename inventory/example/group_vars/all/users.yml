@@ -1,0 +1,16 @@
+---
+users:
+  - username: tower 
+    name: Ansible Tower 
+    groups: ['wheel']
+    uid: 1001
+    home: /home/tower
+    ssh_key:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOXGYJEcpaMVI/YJMxTJqm3KMonGegckbSvuw0bXBeMFKC68LpioPuInc+Nm2K2Rb3bRuelUWlYRu1Wt43qknaDSjn4vLYvWq8VV/BaxbxQH3m8B5cpRdKVBBxp2KB2IXA3lFXb0O8hYfSql9OIEi8QQi+WXI+YVXlid6LNt3HhOxsNq7ti1WfM0SODFSlAhG/W/fcoQWTW5XNSuGizfE6evTllkLI5DrZrXoRvZx6qSDd65lk8yzbFNpQO6Pozh5dy5pUhVfieu5RMeVzq4y5Z+d1wzCrhlcyFpRUH3q2I812qckv/ibNvoNbiLckNwHVe5qDeHG4ysfy/bWW4Lwj root@tower.ismc.io"
+  - username: scarter
+    name: Steven Carter
+    groups: ['wheel']
+    uid: 1002
+    home: /home/scarter
+    ssh_key:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDK19uD+miGdkNhTdY5MA8Yw1MT//jiOWHFUECMoyl2MygTFC/MvNDXitUR4tevwjwpcMFdQnG0l6yVAg0u44L3HftErViJILRjPg24JiBefXfCEBZTqmINYnBvgkh8uvcwzauGiQ4EeTBmzN19+S+2yhJSXfGBYt5XQJ+h7sxN7MEeVRT3CoXxWyCYKjTt7CWdUHjVU/xDeGbFxJjmAO9PTWy1+iJqSQ0OID75kfddoJUOEZFX9MoFmWGwGSj4ljb64AG5WKZvBKyrRFN3MWIZgmNY+POyuKPeNctwXdlbyDk0CGTuK3gjsH2dxDES/tXiFIpXagOeNjWN4bb49Ft5 stevenca@STEVENCA-M-202D"

@@ -1,0 +1,62 @@
+---
+interfaces:
+  ge-0/0/1:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/2:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/3:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/4:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/5:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/6:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/7:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/8:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/9:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/10:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/11:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  ge-0/0/12:
+    description: "Uplink"
+    enabled: True
+    mtu: 1500
+    mode: trunk

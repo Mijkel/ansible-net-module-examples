@@ -1,0 +1,58 @@
+---
+interfaces:
+  GigabitEthernet1/0/1:
+    description: "ht3-node1:eth0"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet1/0/2:
+    description: "ht3-node2:eth0"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet1/0/3:
+    description: "ht3-node3:eth0"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet1/0/4:
+    description: "ht3-node4:eth0"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet1/0/5:
+    description: "ht3-node1:eth1"
+    enabled: True
+    mtu: 1500
+    mode: trunk
+  GigabitEthernet1/0/6:
+    description: "ht3-node2:eth1"
+    enabled: True
+    mtu: 1500
+    mode: trunk
+  GigabitEthernet1/0/7:
+    description: "ht3-node3:eth1"
+    enabled: True
+    mtu: 1500
+    mode: trunk
+  GigabitEthernet1/0/8:
+    description: "ht3-node4:eth1"
+    enabled: True
+    mtu: 1500
+    mode: trunk
+  GigabitEthernet1/0/9:
+    description: "ht3-mgmt:eth0"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 10
+  GigabitEthernet1/0/10:
+    description: "ht3-mgmt:eth1"
+    enabled: True
+    mtu: 1500
+    mode: trunk
+    access_vlan: 10

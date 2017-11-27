@@ -1,0 +1,56 @@
+---
+interfaces:
+  GigabitEthernet0/1:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 100
+  GigabitEthernet0/2:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 100
+  GigabitEthernet0/3:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet0/4:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet0/5:
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet0/6:
+    description: "Server 1"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet0/7:
+    description: "Server 2"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet0/8:
+    description: "Server 3"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 200
+  GigabitEthernet0/9:
+    description: "Guest Network"
+    enabled: True
+    mtu: 1500
+    mode: access
+    access_vlan: 300
+  GigabitEthernet0/10:
+    description: "Uplink"
+    enabled: True
+    mtu: 1500
+    mode: trunk

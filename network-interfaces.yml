@@ -1,0 +1,27 @@
+---
+- hosts: all
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: Convert dictionary to list
+      set_fact:
+        vlan_list: "{{ vlan_list|default([]) + [ {'name': item.key, 'vlan_id': item.value.vlan_id, 'state': item.value.state|default('present') } ] }}"
+      when: vlans is defined
+      with_dict: "{{ vlans }}"
+
+    - block:
+      - name: Configure primary interface
+        net_interface:
+          name: "{{ item.key }}"
+          description: "{{ item.value.description | default(omit) }}"
+          enabled: "{{ item.value.enabled | default('True') }}"
+        with_dict: "{{ interfaces }}"
+
+      - name: Configure layer-2 interface attributes
+        net_l2_interface:
+          name: "{{ item.key }}"
+          mode: "{{ item.value.mode | default(omit) }}"
+          access_vlan: "{{ item.value.access_vlan | default(omit) }}"
+        with_dict: "{{ interfaces }}"
+      when: interfaces is defined

@@ -1,0 +1,11 @@
+---
+vlans:
+  mgmt:
+    vlan_id: 100
+    state: present
+  user:
+    vlan_id: 200
+    state: present
+  guest:
+    vlan_id: 300
+    state: present
